@@ -3,7 +3,7 @@
 <head>
 <style>
 body{
-	background-color:#f7ebec;
+	background-color:#A7CECB;
 	margin:0;
 	padding:0;
 }
@@ -52,34 +52,33 @@ body{
 }
 
 .daan{
-	background-color:white;
+	background-color:#DEE5E5;
+	font-family: 'Trocchi', 
+	serif; font-size: 18px;
 }
 
 .trouwen {
-	background-color:#90EE90;
+	background-color:#DEE5E5;
 	padding:0px;
 	overflow: hidden;
 }
 
 .bio {
-	background-color:#f7ebec;
+	
 }
 
 .timeline {
-	background-color:#3CB371;
+	
 }
 
 .photos{
-	background-color:#48D1CC;
 	overflow: hidden;
 }
 
 .newsletter{
-	background-color:#000080;
 }
 
 .plannen{
-	background-color:#FF4500;
 } 	
 
 .plaatjebio{
@@ -97,16 +96,56 @@ body{
 .photo {
 	max-width: 350px;
 	border-radius: 5px;
-	float: left;
+/*	float: left;
+*/	margin: 5px;
+	display: inline-block;
 }
 
 .imgcontainer {
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
-	max-width: 1050;
+	text-align: center;
 }
 
+.plantext{
+	margin-left: 30%;
+	margin-right:30%;
+	padding: 10px;
+	border-radius: 5px;
+	color:white;
+	font-family: 'Trocchi', 
+	serif; font-size: 20px;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.titelplannen{
+	text-align:center;
+	color:#DEE5E5;
+	font-family: 'Trocchi', 
+	serif; font-size: 35px;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+	font-family: 'Trocchi', 
+	serif; font-size: 35px;
+}
+
+.subscribebutton{
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.inputbutton{
+	background-color: #A3C9A8;
+    border: 2px solid #A3C9A8; /* Green */
+    padding:15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+
+}
 </style>
 </head>
 <body>
@@ -116,7 +155,6 @@ body{
 	<p class="titeltekst"> Daan & Marlien<br>gaan trouwen</p>
 
 <div class="block bio">
-	<H1 align="center">bio</H1>
 	<div class="biomini " >
 		<div class="miniblockleft daan">
 		<div class="cropcontainer">
@@ -164,30 +202,36 @@ body{
 </div> -->
 
 <div class="block photos">
-	<H1 align="center">Foto's</H1>
+	<H1 class="titelplannen">Hoe leuk zijn wij?</H1>
 	<div class="imgcontainer">	
 		<img class="photo" src="img/denm_1.jpeg">
 		<img class="photo" src="img/denm_2.jpeg">
+		<img class="photo" src="img/denm_10.jpeg">
 		<img class="photo" src="img/denm_3.jpeg">
-		<img class="photo" src="img/denm_4.jpeg">
-		<!-- <img class="photo" src="img/denm_5.jpeg"> -->
+		<!-- <div class="photo" style="overflow: hidden;"><img style="height: 262px;" src="img/denm_4.jpeg"></div> -->
+		<img class="photo" style="max-width: none; height: 262px;" src="img/denm_4.jpeg">
 		<img class="photo" src="img/denm_6.jpeg">
 		<img class="photo" src="img/denm_7.jpeg">
 		<img class="photo" src="img/denm_8.jpeg">
 		<img class="photo" src="img/denm_9.jpeg">
+		<img class="photo" style="height: 262px;" src="img/denm_5.jpeg">
+
 	</div>
 
 </div>
 
 <div class="block plannen">
-	<H1 align="center">plannen</H1>
-	<p>3 juni zijn we verloofd en het lijkt ons leuk om volgend jaar (2019) rond die tijd het officieel te maken en dit te vieren. We zijn van plan om in Nederland een feestje te geven en daarna een select groepje uit te nodigen om met ons mee te gaan naar Frankrijk, om daar in een weekend elkaar verder te ontmoeten en dit heugelijke feit nogmaals te vieren. Deze plannen zijn allemaal nog in de maak, dus er kan nog van alles veranderen, maar wil je op de hoogte blijven vul dan onderaan even je gegevens in.</p>
+	<H1 class="titelplannen" >Hoe nu verder?</H1>
+	<div class="plantext ">	
+		<p>3 juni zijn we verloofd en het lijkt ons leuk om volgend jaar (2019) rond die tijd het officieel te maken en dit te vieren. We zijn van plan om in Nederland een feestje te geven en daarna een select groepje uit te nodigen om met ons mee te gaan naar Frankrijk, om daar in een weekend elkaar verder te ontmoeten en dit heugelijke feit nogmaals te vieren. Deze plannen zijn allemaal nog in de maak, dus er kan nog van alles veranderen, maar wil je op de hoogte blijven vul dan onderaan even je gegevens in.</p> 
+	</div> 
+
 </div>
 
 <div class="block newsletter">
-	<H1 align="center">newsletter</H1>
-	<form action="https://goo.gl/forms/sQrVUXHJsU4B60RJ3">
-    	<input type="submit" value="Op de hoogte blijven :)" />
+	<H1 class="titelplannen">Natuurlijk wil je op de hoogte blijven</H1>
+	<form class="subscribebutton" action="https://goo.gl/forms/sQrVUXHJsU4B60RJ3">
+    	<input class="titelplannen inputbutton" style="text-shadow:none;" type="submit" value="Klik op mij :)" />
 	</form>
 </div>
 
