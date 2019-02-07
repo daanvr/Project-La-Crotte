@@ -1,164 +1,216 @@
-<!-- uitnodingfr.html --> 
+<!-- uitnodingfr.html -->
 <html>
+
 <head>
 	<style>
-	body{
-		margin:0;
-	}
+		body {
+			margin: 0;
+			background-color: #A7CECB;
+		}
 
-	.headimgleft{
-		width:100%;
-	}
+		p {
+			margin: 0;
+		}
 
-	.headimgright{
-		width:100%;
-		/*margin: 0px 0px -53.5px 0px;*/
-	}
+		.headimgleft {
+			width: 100%;
+		}
 
-	.trouwen {
-		background-color:#A7CECB;
-		padding:0px;
-		overflow: hidden;
-		margin: 0;
-		width: 50%;
-		height: 100vh;
-		float:left;
-		display:block;
-	}
+		.headimgright {
+			width: 100%;
+			/*margin: 0px 0px -53.5px 0px;*/
+		}
 
-	.block {
-		width:100%;
-		background-color:#A7CECB; 
-	}
+		.trouwen {
+			background-color: #A7CECB;
+			/* padding: 0px; */
+			/* overflow: hidden; */
+			/* margin: 0; */
+			width: 50%;
+			/* height: 100vh; */
+			float: left;
+			/* display: block; */
+			/* position: absolute; */
+		}
 
-	.titeldiv{
-		height:33vh;
-	}
+		.block {
+			width: 100vw;
+			height: 50vw;
+			background-color: #A7CECB;
+			text-align: center;
+		}
 
-	.tekstdiv{
-		height:100vh;
-		position:absolute;
-		width:100%;
-	}
+		.aspectRatioContainer {
+			width: 100%;
+			position: relative;
+			padding-top: 50%;
+			overflow: hidden;
+		}
 
-	.titeltekst{
-		/*position: absolute;*/
-		text-align: center;
-		transform: translate(-8%,-50%);
-		color: #f7ebec; 
-		font-family: 'Trocchi', serif; 
-		font-size: 65px; 
-		font-weight: normal; 
-		line-height: 48px; 
-		margin: 0; 
-		text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-		line-height: 85%;
-		top:200px;
-		left:450px;
-	}
+		.headerContainer {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 50vw;
+		}
 
-	.tekstlinks{
-		/*position: absolute;*/
-		text-align:left;
-		/*top:100px;*/
-		/*left:0px;*/
-		color: #f7ebec; 
-		font-family: 'Trocchi', serif; 
-		font-size: 40px; 
-		font-weight: normal; 
-		line-height: 48px; 
-		padding-left:50px;
-		/*margin: 0; */
-		text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-		line-height: 85%;
-	}
+		.titeldiv {
+			height: 33%;
+			text-align: center;
+		}
 
-	.tekstrechts{
-		/*position: absolute;*/
-		text-align:center;
-		/*top:300px;*/
-		/*right:50px;*/
-		color: #f7ebec; 
-		font-family: 'Trocchi', serif; 
-		font-size: 40px; 
-		font-weight: normal; 
-		line-height: 48px; 
-		/*padding-right:200px;*/
-		/*padding-bottom:100px;*/
-		/*margin: 0; */
-		text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-		line-height: 85%;
-	}
+		.tekstdiv {
+			width: 100%;
+		}
 
-	.tab1 { 
-		display:inline-block; 
-		padding-left: 70px;
-		padding-top: 10px; 
-	}
+		.titeltekst {
+			/*position: absolute;*/
+			text-align: center;
+			/* transform: translate(-8%, -50%); */
+			color: #f7ebec;
+			font-family: 'Trocchi', serif;
+			font-size: 7vw;
+			font-weight: normal;
+			line-height: 7vw;
+			/* margin: 0; */
+			text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+			/* line-height: 85%; */
+			/* top: 200px; */
+			/* left: 450px; */
+			/* padding: 0 !important; */
+			line-height: calc(50vw * 0.33);
 
-	.tab2 {
-		display:inline-block; 
-		padding-left: 90px;
-		padding-top: 10px; 
-	}
+		}
 
-/*.containers{
-	padding:10px;
-    margin-left: auto;
-	margin-right: auto;
-	overflow: hidden;
-	text-align: center;
-	}*/
+		.tekstlinks {
+			/*position: absolute;*/
+			text-align: center;
+			/*top:100px;*/
+			/*left:0px;*/
+			color: #f7ebec;
+			font-family: 'Trocchi', serif;
+			font-size: 4vw;
+			font-weight: normal;
+			/* line-height: 48px; */
+			padding: 3vw 0 0 5vw;
+			/*margin: 0; */
+			text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+			line-height: 85%;
+			/* line-height: calc(50vw * 0.33 * 0.2); */
 
-	.containers{
-		padding:10px;
-		/*height:400px;*/
-		width:350px;
-		border-radius:5px;
-		display: inline-block;
-		margin: 20px;
-		background-color: #DEE5E5;
-		font-family: 'Trocchi', 
-		serif; font-size: 18px;
-	}
+		}
 
-	.ruine{
-		width:100%;
-		border-radius:5px;
-	}
+		.tekstrechts {
+			/*position: absolute;*/
+			text-align: center;
+			/*top:300px;*/
+			/*right:50px;*/
+			color: #f7ebec;
+			font-family: 'Trocchi', serif;
+			font-size: 4vw;
+			font-weight: normal;
+			line-height: 48px;
+			padding: 0 5vw 3vw 0 ;
+			/*padding-bottom:100px;*/
+			/*margin: 0; */
+			text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+			line-height: 85%;
+		}
 
-	.alignright{
-		display: inline-block;
-		text-align: right;
-		padding-right: 50px;
-		padding-bottom: 10px;
-	}
+		.tab1 {
+			display: inline-block;
+			/* padding-left: ; */
+			/* padding-top: 10px; */
+		}
 
-</style>
+		.tab2 {
+			display: inline-block;
+			/* padding-left: 120px; */
+			/* padding-top: 10px; */
+		}
+
+
+
+		.containers {
+			padding: 10px;
+			/*height:400px;*/
+			width: 350px;
+			max-width: 90vw;
+			border-radius: 5px;
+			display: inline-block;
+			margin: 3vw 1vw 3vw 1vw;
+			background-color: #DEE5E5;
+			font-family: 'Trocchi', serif;
+			font-size: 18px;
+			text-align: left;
+			height: 700px;
+			vertical-align: top;
+		}
+
+		.ruine {
+			width: 100%;
+			border-radius: 5px;
+		}
+
+		.alignright {
+			display: inline-block;
+			text-align: center;
+			/* padding-right: 50px; */
+			/* padding-bottom: 10px; */
+		}
+
+		.verticalyCenter {
+			display: inline-block;
+			vertical-align: middle;
+			line-height: normal;
+		}
+	</style>
 </head>
+
 <body>
 	<div class="block">
-		<div class="trouwen"> 
-			<img class="headimgleft" src="marlienfiets.jpg">
-		</div>
+		<div class="aspectRatioContainer">
+			<div class="headerContainer">
+				<div class="trouwen">
+					<img class="headimgleft" src="marlienfiets.jpg">
+				</div>
 
-		<div class="trouwen">
-			<img class="headimgright" src="Daanfiets.jpg"> 		
-		</div>
-
-
-		<div class="tekstdiv">
-			<div class="titeldiv">
-				<p class="tekstlinks">31 mei <br> <span class="tab1"> & </span> <br> <span class="tab2">1 juni</span></p>
+				<div class="trouwen">
+					<img class="headimgright" src="Daanfiets.jpg">
+				</div>
 			</div>
+			<div class="headerContainer">
+				<div class="tekstdiv">
 
-			<div class="titeldiv">
-				<p class="titeltekst">Saint-Laurent-du-Pape</p>
-			</div>
+					<div class="titeldiv" style="text-align: left">
+						<div class="alignright">
+							<span class="verticalyCenter">
+								<p class="tekstlinks">
+									31 mei <br>
+									<span class="tab1"></span>&<br>
+									<span class="tab2"></span>1 juni
+								</p>
+							</span>
+						</div>
+					</div>
+					<div class="titeldiv">
+						<span class="verticalyCenter">
+							<p class="titeltekst">Saint-Laurent-du-Pape</p>
+						</span>
+					</div>
 
-			<div class="titeldiv" style="text-align: right">
-				<div class="alignright">
-				<p class="tekstrechts">Daan <br> <span class="tab1"> & </span> <br> <span class="tab2">Marlien</span></p>
+					<div class="titeldiv" style="text-align: right">
+						<div class="alignright">
+							<span class="verticalyCenter">
+								<p class="tekstrechts">
+									Daan <br>
+									<span class="tab1"> & </span> <br>
+									<span class="tab2">Marlien</span>
+								</p>
+							</span>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -168,17 +220,21 @@
 		<div class="containers">
 			<img class="ruine" src="badkamer.jpg">
 			<h1 align="center"> Het idee </h1>
+
 			<p> <br> Wij gaan gezellig naar Frankrijk. We willen goed eten en dat gaan we zeker doen! Frankrijk h&egrave;! We zouden jullie graag meerdere dagen goed eten voorschotelen en om dit haalbaar te maken willen we jullie vragen om mee te helpen koken en/of af te wassen. Verder gaan we een heleboel activiteiten doen. De meeste hopelijk buiten als het weer het toelaat. Denk aan een lange wandeling, zwemmen, kampvuur.</p>
 		</div>
 
 		<div class="containers">
 			<img class="ruine" src="ontbijt.jpg">
 			<h1 align="center"> Grove Planning </h1>
-			<p> <br> Donderdag rond 21:00: aankomst (jullie zijn van harte welkom eerder aan te komen, laat dit dan wel even weten! Dan zorgen wij voor een lekker pastaatje!) <br> <br> Vrijdag: ontbijt, activiteit, lunch, activiteit, chique avondeten <br> <br> Zaterdag: ontbijt, activiteit, lunch, avondeten, feest <br> <br> Zondag: ontbijt, uitzwaaien <br> <br> Dit is een hele grove planning, maar er volgt later een programmaboekje :) </p>
+			<p> <br> Donderdag rond 21:00: aankomst (jullie zijn van harte welkom eerder aan te komen, laat dit dan wel even
+				weten! Dan zorgen wij voor een lekker pastaatje!) <br> <br> Vrijdag: ontbijt, activiteit, lunch, activiteit, chique
+				avondeten <br> <br> Zaterdag: ontbijt, activiteit, lunch, avondeten, feest <br> <br> Zondag: ontbijt, uitzwaaien
+				<br> <br> Dit is een hele grove planning, maar er volgt later een programmaboekje :) </p>
 		</div>
 
-		<div class="containers"> 
-			<img class="ruine" src="kleding.jpg">
+		<div class="containers">
+			<img class="ruine" src="koffers.jpg">
 			<h1 align="center"> Kleding uitkies hulp </h1>
 			<p> <br> We gaan veel actieve dingen doen en hopelijk ook zwemmen. Neem dus vooral fijne schoenen en lekker zittende kleren en je zwemspullen mee. Daarnaast lijkt het ons stiekem toch ook wel leuk om &eacute;&eacute;n avond echt goed gekleed te gaan. Iets waar jij prettig in voelt, wat je misschien niet elke dag aan zou trekken, maar ook niet iets wat je alleen voor deze ene gelegenheid gebruikt. Succes! </p> 
 		</div>
@@ -193,7 +249,9 @@
 		<div class="containers">
 			<img class="ruine" src="slapen.jpg">
 			<h1 align="center"> Slapen </h1>
-			<p> <br> Een slaapplek regelen we voor je! We hebben helaas niet genoeg ruimte om ieder persoon of stel een eigen kamer te geven. Voor tenten hebben we genoeg plek, dus mocht je daar geen problemen mee hebben geef dit dan even door via onderstaande vragenlijst. </p>
+			<p> <br> Een slaapplek regelen we voor je! We hebben helaas niet genoeg ruimte om ieder persoon of stel een eigen
+				kamer te geven. Voor tenten hebben we genoeg plek, dus mocht je daar geen problemen mee hebben geef dit dan even
+				door via onderstaande vragenlijst. </p>
 		</div>
 
 		<div class="containers">
@@ -226,4 +284,5 @@
 
 
 </body>
+
 </html>
