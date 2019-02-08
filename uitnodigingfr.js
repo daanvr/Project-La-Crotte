@@ -13,7 +13,7 @@ var inviteeList = [
     // ["Elodie", "f293jh5s0"],
     // ["Lisa", "324bf98"],
     // ["Aline en Pierre", "324bf98"],
-    // ["In&egravs en Cyril", "324bf98"],
+    // ["Ines en Cyril", "324bf98"], //let op e werkt niet
     ["Maaike en Matthijs", "hrj43726hf"],
     // ["Myriam", "282hfjs291"],
     ["Bert en Heleen", "nvhsfj134jg"],
@@ -21,7 +21,7 @@ var inviteeList = [
     ["Carolien", "cbag6271jfd"],
     ["Christine en Quintijn", "hfs7103fc"],
     ["Judith", "672fnshe433"],
-    ["Willemijn en Ren&eacute;", "324hfb2348"],
+    ["Willemijn, Rene, Mae-Lynn en Yinthe", "324hfb2348"],// let op e werkt niet
     ["Hanneke", "gd62dbha7"],
     ["Joanne en Thomas", "hfv6728ad"],
     ["Liezeke en Peter-Jan", "cbhda29rhlaw"],
@@ -51,3 +51,4 @@ function isInvited() {
     document.getElementsByTagName("BODY")[0].style.display = "none";
     alert("Er is iets mis met deze uitnodigingslink. Probeer de juiste link te vinden of contacteer Daan en/of Marlien.");
 }
+
