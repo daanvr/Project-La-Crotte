@@ -28,7 +28,8 @@ var inviteeList = [
     ["Lianne", "hdyqh78ajc0"],
     ["Merle en Merijn", "87fg2h105dg"],
     ["Willem Jan en Sylvia", "4fds32h7ons"],
-    ["Willemijn en Victor", "4562gfgt319o"]
+    ["Willemijn en Victor", "4562gfgt319o"],
+    ["Marion", "643h5nmjdp568"]
 ];
 
 document.getElementById("inviteeName").textContent = isInvited();
