@@ -1,5 +1,5 @@
 var inviteeList = [
-    ["Daan en Marlien", "324bf98"],
+    ["Daan en Marlien", "halloikbendaan"],
     ["Andrea en Leo", "123hkjlh432"],
     ["Kristine", "58734fdf74"],
     ["Maartje, Laurens en Saga", "67fd5had3"],
