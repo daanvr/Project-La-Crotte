@@ -1,0 +1,394 @@
+<!-- uitnodingfr.html -->
+<html>
+
+<head>
+	<style>
+		body {
+			margin: 0;
+			background-color: #A7CECB;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		.headimgleft {
+			width: 100%;
+		}
+
+		.headimgright {
+			width: 100%;
+			/*margin: 0px 0px -53.5px 0px;*/
+		}
+
+		.trouwen {
+			background-color: #A7CECB;
+			/* padding: 0px; */
+			/* overflow: hidden; */
+			/* margin: 0; */
+			width: 50%;
+			/* height: 100vh; */
+			float: left;
+			/* display: block; */
+			/* position: absolute; */
+		}
+
+		.block {
+			width: 100vw;
+			min-height: 50vw;
+			/* height: 50vw; */
+			background-color: #A7CECB;
+			text-align: center;
+		}
+
+		.Footer {
+			width: 100vw;
+			background-color: rgb(100, 134, 132);
+			min-height: 30vh;
+			text-align: center;
+			color: white;
+			font-family: 'Trocchi', serif;
+			font-size: 18px;
+		}
+
+		.FooterElement {
+			display: inline-block;
+			width: 220px;
+			max-width: 90vw;
+			vertical-align: top;
+			/* border: dashed red 2px; */
+			margin: 20px;
+			text-align: left;
+		}
+
+		.aspectRatioContainer {
+			width: 100%;
+			position: relative;
+			padding-top: 50%;
+			overflow: hidden;
+		}
+
+		.headerContainer {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 50vw;
+		}
+
+		.titeldiv {
+			height: 33%;
+			text-align: center;
+		}
+
+		.tekstdiv {
+			width: 100%;
+		}
+
+		.titeltekst {
+			/*position: absolute;*/
+			text-align: center;
+			/* transform: translate(-8%, -50%); */
+			color: #f7ebec;
+			font-family: 'Trocchi', serif;
+			font-size: 7vw;
+			font-weight: normal;
+			line-height: 7vw;
+			/* margin: 0; */
+			text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+			/* line-height: 85%; */
+			/* top: 200px; */
+			/* left: 450px; */
+			/* padding: 0 !important; */
+			line-height: calc(50vw * 0.33);
+
+		}
+
+		.tekstlinks {
+			/*position: absolute;*/
+			text-align: center;
+			/*top:100px;*/
+			/*left:0px;*/
+			color: #f7ebec;
+			font-family: 'Trocchi', serif;
+			font-size: 4vw;
+			font-weight: normal;
+			/* line-height: 48px; */
+			padding: 3vw 0 0 5vw;
+			/*margin: 0; */
+			text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+			line-height: 85%;
+			/* line-height: calc(50vw * 0.33 * 0.2); */
+
+		}
+
+		.tekstrechts {
+			/*position: absolute;*/
+			text-align: center;
+			/*top:300px;*/
+			/*right:50px;*/
+			color: #f7ebec;
+			font-family: 'Trocchi', serif;
+			font-size: 4vw;
+			font-weight: normal;
+			line-height: 48px;
+			padding: 0 5vw 3vw 0;
+			/*padding-bottom:100px;*/
+			/*margin: 0; */
+			text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+			line-height: 85%;
+		}
+
+		.tab1 {
+			display: inline-block;
+			/* padding-left: ; */
+			/* padding-top: 10px; */
+		}
+
+		.tab2 {
+			display: inline-block;
+			/* padding-left: 120px; */
+			/* padding-top: 10px; */
+		}
+
+
+
+		.containers {
+			padding: 10px;
+			/*height:400px;*/
+			width: 350px;
+			max-width: 90vw;
+			border-radius: 5px;
+			display: inline-block;
+			margin: 3vw 1vw 0 1vw;
+			background-color: #DEE5E5;
+			font-family: 'Trocchi', serif;
+			font-size: 18px;
+			text-align: left;
+			/* height: 700px; */
+			vertical-align: top;
+		}
+
+		.ruine {
+			width: 100%;
+			border-radius: 5px;
+		}
+
+		.alignright {
+			display: inline-block;
+			text-align: center;
+			/* padding-right: 50px; */
+			/* padding-bottom: 10px; */
+		}
+
+		.verticalyCenter {
+			display: inline-block;
+			vertical-align: middle;
+			line-height: normal;
+		}
+
+
+			.titelplannen{
+				text-align:center;
+				color: white;
+				font-family: 'Trocchi', 
+				serif; font-size: 35px;
+				text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+			}
+
+			.subscribebutton{
+				margin-right: auto;
+				margin-left: auto;
+				text-align: center;
+			}
+
+			.inputbutton{
+				background-color: rgb(100, 134, 132);
+				border: 2px solid rgb(100, 134, 132); /* Green */
+				padding:15px;
+				border-radius: 10px;
+				box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+				cursor: pointer;
+			}
+
+			.welcomeContainer {
+				width: 100%;
+				text-align: center;
+			}
+			.welcomeBlock {
+				display: inline-block;
+				background-color: rgb(100, 134, 132);
+				border-radius: 10px;
+				width: fit-content;
+				padding: 15px 30px 15px 30px;
+				margin: 3vw 0 0 0;
+			}
+			.welcomeText {
+				color: white;
+				font-family: 'Trocchi', serif;
+				font-size: 35px;
+			}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="block">
+		<div class="aspectRatioContainer">
+			<div class="headerContainer">
+				<div class="trouwen">
+					<img class="headimgleft" src="marlienfiets.jpg">
+				</div>
+
+				<div class="trouwen">
+					<img class="headimgright" src="Daanfiets.jpg">
+				</div>
+			</div>
+			<div class="headerContainer">
+				<div class="tekstdiv">
+					<div class="titeldiv" style="text-align: left">
+						<div class="alignright">
+							<span class="verticalyCenter">
+								<p class="tekstlinks">
+									31 mei <br>
+									<span class="tab1"></span>&<br>
+									<span class="tab2"></span>1 juni
+								</p>
+							</span>
+						</div>
+					</div>
+					<div class="titeldiv">
+						<span class="verticalyCenter">
+							<p class="titeltekst">Uitnodiging Frankrijk</p>
+						</span>
+					</div>
+
+					<div class="titeldiv" style="text-align: right">
+						<div class="alignright">
+							<span class="verticalyCenter">
+								<p class="tekstrechts">
+									Daan <br>
+									<span class="tab1"> & </span> <br>
+									<span class="tab2">Marlien</span>
+								</p>
+							</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="block" style="padding-bottom: 3vw">
+
+		<div class="welcomeContainer">
+			<div class="welcomeBlock">
+				<p class="welcomeText">
+					Hey lieve <label id="inviteeName"></label>!
+				</p>
+			</div>
+		</div>
+
+		<div class="containers">
+			<img class="ruine" src="badkamer.jpg">
+			<h1 align="center"> l'idee </h1>
+			<p> <br> On va ramener beaucoup de nos amis Hollandais en Ardeche pour
+				 feter notre mariage. On a l'intantion de faire des activité exterieur
+				 comme se baigner, rendoner et fair un feux de camp si le temps nous le 
+				 permet. On va en profiter pour manger touse ensamble et de fair découvrire la 
+				 cuisine francaise. On vas etre dans les allentour de 40 persones. Pour rendre 
+				 tous ca possible on va devoir partager des taches comme la cuisine et la vaisel.
+				 Comme si on était en vacance tousse ensamble dans une maison incune.
+				</p>	
+		</div>
+
+		<div class="containers">
+			<img class="ruine" src="Ontbijt.jpg">
+			<h1 align="center"> Planning aproximative </h1>
+			<p> <br> <b> Jeudi </b> ver 21:00: arrivee (vous etes les bien venue avant, faite nous savoir, comme ca on peut prevoir a manger!) <br> <br>
+				<b>Vendredi</b>: Petit dejeuner, activitee, repas, activitee, le grand repas chique
+				avondeten <br> <br> <b>Zaterdag</b>: ontbijt, activiteit, lunch, avondeten, kampvuur <br> <br> <b>Zondag</b>:
+				ontbijt, uitzwaaien
+				<br> <br> Dit is een hele grove planning, maar er volgt later een programmaboekje :) </p>
+		</div>
+
+		<div class="containers">
+			<img class="ruine" src="koffers.jpeg">
+			<h1 align="center"> Kleding uitkies hulp </h1>
+			<p> <br> We gaan veel actieve dingen doen en hopelijk ook zwemmen. Neem dus vooral fijne schoenen en lekker zittende
+				kleren en je zwemspullen mee. Daarnaast lijkt het ons stiekem toch ook wel leuk om &eacute;&eacute;n avond echt
+				goed gekleed te gaan. Iets waar jij je prettig in voelt, wat je misschien niet elke dag aan zou trekken, maar ook
+				niet
+				iets wat je alleen voor deze ene gelegenheid gebruikt. Succes! </p>
+		</div>
+
+
+		<div class="containers">
+			<img class="ruine" src="toneel.jpg">
+			<h1 align="center"> Stukjes </h1>
+			<p> <br> Vind je het leuk om een stukje te doen, neem dan even contact op met Christine en Quintijn: cjdebaat@gmail.com
+			</p>
+		</div>
+
+		<div class="containers">
+			<img class="ruine" src="slapen.jpg">
+			<h1 align="center"> Slapen </h1>
+			<p> <br> Een slaapplek regelen we voor je! We hebben helaas niet genoeg ruimte om ieder persoon of stel een eigen
+				kamer te geven. Voor tenten hebben we genoeg plek, dus mocht je daar geen problemen mee hebben geef dit dan even
+				door via de onderstaande vragenlijst. </p>
+		</div>
+
+		<div class="containers">
+			<img class="ruine" src="Ruine.JPG">
+			<h1 align="center"> Cadeautips </h1>
+			<p> <br>We vinden het super fijn dat jullie de moeite nemen om helemaal naar Frankrijk te komen. Dat is al cadeau
+				genoeg voor ons! Mocht je toch nog wat willen geven dan zouden wij erg blij worden van een donatie voor onze
+				ru&iuml;ne. Deze staat in Frankrijk en hier willen wij graag ons nederige stulpje van maken voor als we in
+				Frankrijk zijn. </p>
+			<!-- Op de locatie zetten we verschillende potten neer, zodat je zelf kan kiezen of je wil doneren voor
+				onder andere het dak, het sanitair of de inrichting. -->
+		</div>
+
+		<div class="containers">
+			<img class="ruine" src="cour.jpg">
+			<h1 align="center"> Locatie </h1>
+			<p> <br> Domaine de l'Amiral <br> Narbousset <br> 75 Route de Vernoux 07800 <br> Saint-Laurent-du-Pape <br>
+				Frankrijk <br> N44.82469 E4.74678 <br> <a href=" https://goo.gl/maps/BJc9G4NAVGo" target="_blank"> Google maps</a></p>
+		</div>
+
+
+		<div>
+			<H1 class="titelplannen">En, kom je? Laat het ons weten!</H1>
+			<form class="subscribebutton" action="https://goo.gl/forms/LEUBWj1xKRaqVPFi1" target="_blank" >
+				<input class="titelplannen inputbutton" style="text-shadow:none;" type="submit"  value="Klik op mij :)" />
+			</form>
+		</div>
+	</div>
+
+	<div class="Footer">
+		<div class="FooterElement">
+			Daan en Marlien<br>
+			Calslaan 18<br>
+			7522MB - Enschede<br>
+			+31 6 15 21 77 78
+		</div>
+		<div class="FooterElement">
+			Voor geheime dingen:<br>
+			Christine & Quintijn<br>
+			cjdebaat@gmail.com
+		</div>
+		<div class="FooterElement">
+			Domaine de l'Amiral <br>
+			Narbousset <br>
+			75 Route de Vernoux 07800 <br>
+			Saint-Laurent-du-Pape <br>
+			Frankrijk <br>
+			N44.82469 E4.74678
+		</div>
+	</div>
+
+	<script type="text/javascript" src="uitnodigingfr.js"></script>
+
+</body>
+
+</html>
