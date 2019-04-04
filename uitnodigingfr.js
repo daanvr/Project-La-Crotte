@@ -9,7 +9,7 @@ var inviteeList = [
     ["Jim", "hfs873jamdn"],
     ["Casper en Stephanie", "heyr21732jf"],
     ["Tom", "hfgag301238"],
-    ["Cyril", "67fd5had3"],
+    ["Cyril", "bcshagdq93"],
     ["Elodie", "75fjjakn03"],
     ["Lisa", "hfba49284"],
     ["Aline en Pierre", "jbahr89001"],
