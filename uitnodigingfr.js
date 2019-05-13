@@ -12,6 +12,7 @@ var inviteeList = [
     ["Cyril", "bcshagdq93"],
     ["Justine", "ghfs649jg"],
     ["Elodie", "75fjjakn03"],
+    ["Lucas", "bfgh3917g4"],
     ["Lisa", "hfba49284"],
     ["Aline en Pierre", "jbahr89001"],
     ["Ines en Cyril", "8rhwbrfaf"], //let op e werkt niet
